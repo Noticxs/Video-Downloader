@@ -74,6 +74,9 @@ python server.py
 
 The application will start on `http://localhost:2070`
 
+### Installation for casaos:
+For CasaOS installation instructions, please see [casaos/casaos_install.md](casaos/casaos_install.md).
+
 ## 📖 Usage
 
 ### Basic Download
