@@ -13,8 +13,9 @@ services:
     environment:
       - FLASK_ENV=production
       - PYTHONUNBUFFERED=1
-    networks:
-      - video-downloader-network
+      - FLASK_HOST=0.0.0.0
+      - FLASK_PORT=2070
+    network_mode: "bridge"
     labels:
       # CasaOS specific labels for better integration
       - "casaos.name=Video Downloader"
@@ -31,10 +32,6 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
-
-networks:
-  video-downloader-network:
-    driver: bridge
 
 volumes:
   downloads:
