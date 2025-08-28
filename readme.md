@@ -69,7 +69,7 @@ sudo apt install ffmpeg
 ### Step 4: Run the Application
 
 ```bash
-python server.py
+python app.py
 ```
 
 The application will start on `http://localhost:2070`
